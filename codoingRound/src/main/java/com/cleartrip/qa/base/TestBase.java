@@ -12,7 +12,7 @@ public class TestBase {
 	static {
 		String browserName = "chrome";
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\jars&drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/GitRepo/codoingRound/lib/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
