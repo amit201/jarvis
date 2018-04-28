@@ -1,4 +1,3 @@
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -14,8 +13,8 @@ public class FlightBookingTest extends TestBase {
 	@Test
 	public void testThatResultsAppearForAOneWayJourney() {
 
-		// setDriverPath();
-		driver.get("https://www.cleartrip.com/");
+	
+		initialization();
 		waitFor(2000);
 		driver.findElement(By.id("OneWay")).click();
 		WebElement fromCity = driver.findElement(By.cssSelector("input[id='FromTag']"));
